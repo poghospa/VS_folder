@@ -15,4 +15,17 @@ plt.show()
 ![Skills Top Trending](Python_Data_Project\images\skill_trend_da.png)
 *Bar graph visualizing the trending top skills for data analyst in the US in 2023.*
 
+## How well do jobs and skills pay for Data Analysts?
 
+```python
+
+sns.boxplot(data=df_us_top6, x='salary_year_avg', y='job_title_short', order=job_order)
+ax= plt.gca()
+ax.xaxis.set_major_formatter(plt.FuncFormatter(lambda x, pos: f'${x/1000:1.0f}K'))
+plt.show()
+
+```
+
+#### Result
+
+![Salary Distribution of Data Jobs in the US](Python_Data_Project\images\salary_trend_us.png)
