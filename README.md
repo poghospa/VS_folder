@@ -29,3 +29,24 @@ plt.show()
 #### Result
 
 ![Salary Distribution of Data Jobs in the US](Python_Data_Project\images\salary_trend_us.png)
+
+
+## Highest Top 10 Skills for Data Analyst
+
+
+
+
+```python
+
+fig,ax= plt.subplots(2,1)
+# Top 10 Highest Paid Skills For Data Analysts
+
+sns.barplot(data=df_da_top_pay, x='median', y=df_da_top_pay.index, ax=ax[0], hue='median', palette='dark:b_r')
+
+# Top 10 In-Demand Skills for Data Analyst
+sns.barplot(data=df_da_skills, x='median', y=df_da_skills.index, ax=ax[1], hue='median', palette='dark:b_r')
+plt.show()
+
+```
+
+![The Highest Paid and Most In=Demand Skills for Data Analyst in the US](highset_paid_and_most_in_demand_skills_for_data_analyst_in_the_us.png)
