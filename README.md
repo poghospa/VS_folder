@@ -50,3 +50,20 @@ plt.show()
 ```
 
 ![The Highest Paid and Most In=Demand Skills for Data Analyst in the US](highset_paid_and_most_in_demand_skills_for_data_analyst_in_the_us.png)
+
+
+## What is the most optimal skills to learn for Data Analysts?
+
+#### Visualize Data
+
+```python
+
+sns.scatterplot(data=df_plot, x='skills_percent', y='median_salary')
+plt.show()
+
+```
+
+#### Results
+
+![Most Optimal Skills for Data Analysts in the US](Python_Data_Project\images\salary_percentage_da.png)
+*A scatter plot visualizing the most optimal skills (high paying & high demand) for Data Analysts in the US.
